@@ -14,9 +14,35 @@ img{
 }
 
 #header{
-  background: #000;
+  background: url('../src//images/programming-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  height: 250px;  
+  position: relative;
+}
+
+.header-content{
   color: #fff;
-  padding: 10px;
+  font-weight: bolder;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  background: #009900;
+  border-radius: 4px;
+  width: 50%;
+  /* margin: 5px 50% 10px 20%; */
+  margin: 20px 0 10px 20%;
+  padding: 20px;
+  opacity: 1;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.header-content h1, p{
+  margin-top: 10px;
 }
 
 .container{
@@ -78,7 +104,9 @@ img{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-  
+  .header-content{
+    margin: 20px 0 10px 22%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,5 +115,8 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+  }
+  .header-content{
+    margin: 20px 0 10px 24%;
   }
 }
