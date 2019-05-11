@@ -6,54 +6,118 @@ import ProjectFour from '../images/project-4.png';
 import ProjectFive from '../images/project-5.png';
 import ProjectSix from '../images/project-6.png';
 
-
 export class Project extends Component {
   render() {
     return (
-      <div className="container" id="projects">
+      <div className='container' id='projects'>
         <h1>Projects</h1>
-        <div className="three-column-grid">
-          <div className="project-content">
-            <h3>Photography Portfolio</h3>
-            <a href="https://tristian-portfolio.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <img src={ProjectOne} alt=""/>
-            </a>
+        <div className='three-column-grid'>
+          <div className='project-content'>
+            <img src={ProjectOne} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Photography Portfolio</h3>
+                <a
+                  href='https://tristian-portfolio.herokuapp.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="project-content">
-            <h3>Clothing Store</h3>
-            <a href="https://treezy-clothing-store.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
-              <img src={ProjectTwo} alt=""/>
-            </a>
+          <div className='project-content'>
+            <img src={ProjectTwo} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Clothing Store</h3>
+                <a
+                  href='https://treezy-clothing-store.herokuapp.com/index.html'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="project-content">
-            <h3>Cafe Website</h3>
-            <a href="https://treeyhouse-cafe.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <img src={ProjectThree} alt=""/>
-            </a>
+          <div className='project-content'>
+            <img src={ProjectThree} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Cafe Website</h3>
+                <a
+                  href='https://treeyhouse-cafe.herokuapp.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="project-content">
-            <h3>Rosary Website</h3>
-            <a href="https://rosary-web-application.herokuapp.com/index.html" target="_blank" rel="noopener noreferrer">
-              <img src={ProjectFour} alt=""/>
-            </a>
+          <div className='project-content'>
+            <img src={ProjectFour} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Rosary Website</h3>
+                <a
+                  href='https://rosary-web-application.herokuapp.com/index.html'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="project-content">
-            <h3>Guessing Game</h3>
-            <a href="https://safe-lowlands-88829.herokuapp.com/index.html" target="_bank" rel="noopener noreferrer">
-              <img src={ProjectFive} alt=""/>
-            </a>
+          <div className='project-content'>
+            <img src={ProjectFive} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Plumbing Website</h3>
+                <a
+                  href='https://optimistic-perlman-6f0c0c.netlify.com/'
+                  target='_bank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="project-content">
-            <h3>Desk Set-Up</h3>
-            <a href="https://lattrell-sapon-desk-set-up.herokuapp.com/index.html" target="_bank" rel="noopener noreferrer">
-              <img src={ProjectSix} alt=""/>
-            </a>
-            
+          <div className='project-content'>
+            <img src={ProjectSix} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Desk Setup</h3>
+                <a
+                  href='https://lattrell-sapon-desk-set-up.herokuapp.com/index.html'
+                  target='_bank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Project
+export default Project;

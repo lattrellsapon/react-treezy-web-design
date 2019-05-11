@@ -9,36 +9,36 @@ import PHP from '../images/php.png';
 export class Technical extends Component {
   render() {
     return (
-      <div className="container" id="technical-skills">
+      <div className='container' id='technical-skills'>
         <h1>Technical Skills</h1>
-        <div className="three-column-grid">
-            <div className="technical-content">
-                <h3>HTML</h3>
-                <img src={HTML} alt=""/>
-            </div>
-            <div className="technical-content">
-                <h3>CSS</h3>
-                <img src={CSS} alt=""/>
-            </div>
-            <div className="technical-content">
-                <h3>JavaScript</h3>
-                <img src={Javascript} alt=""/>
-            </div>
-            <div className="technical-content">
-                <h3>NodeJs</h3>
-                <img src={NodeJs} alt=""/>
-            </div>
-            <div className="technical-content">
-                <h3>React</h3>
-                <img src={ReactFramework} alt=""/>
-            </div>
-            <div className="technical-content">
-                <h3>PHP</h3>
-                <img src={PHP} alt=""/>
-            </div>
+        <div className='three-column-grid'>
+          <div className='technical-content' id='html'>
+            <h3>HTML</h3>
+            <i class='fab fa-html5' id='skill-logo' />
+          </div>
+          <div className='technical-content' id='css'>
+            <h3>CSS</h3>
+            <i class='fab fa-css3-alt' id='skill-logo' />
+          </div>
+          <div className='technical-content' id='javascript'>
+            <h3>JavaScript</h3>
+            <i class='fab fa-js-square' id='skill-logo' />
+          </div>
+          <div className='technical-content' id='node-js'>
+            <h3>NodeJs</h3>
+            <i class='fab fa-node' id='skill-logo' />
+          </div>
+          <div className='technical-content' id='react-js'>
+            <h3>React</h3>
+            <i class='fab fa-react' id='skill-logo' />
+          </div>
+          <div className='technical-content' id='php'>
+            <h3>PHP</h3>
+            <i class='fab fa-php' id='skill-logo' />
+          </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
