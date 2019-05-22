@@ -5,6 +5,8 @@ import ProjectThree from '../images/project-3.png';
 import ProjectFour from '../images/project-4.png';
 import ProjectFive from '../images/project-5.png';
 import ProjectSix from '../images/project-6.png';
+import ReactBlog from '../images/react-blog.png';
+import ErikasPhotography from '../images/erika-photography.png';
 
 export class Project extends Component {
   render() {
@@ -38,6 +40,40 @@ export class Project extends Component {
                 <a
                   href='https://treezy-clothing-store.herokuapp.com/index.html'
                   target='_blank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className='project-content'>
+            <img src={ErikasPhotography} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Erika's Photography</h3>
+                <a
+                  href='https://youthful-goldberg-54a29a.netlify.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  id='visit-website'
+                >
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className='project-content'>
+            <img src={ReactBlog} alt='' />
+
+            <div className='overlay'>
+              <div className='text'>
+                <h3>Treezy Blog</h3>
+                <a
+                  href='https://hungry-jones-162939.netlify.com/'
+                  target='_bank'
                   rel='noopener noreferrer'
                   id='visit-website'
                 >
