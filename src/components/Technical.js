@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-import HTML from '../images/html.png';
-import CSS from '../images/css.png';
-import Javascript from '../images/javascript.png';
-import NodeJs from '../images/nodejs.png';
-import ReactFramework from '../images/react.png';
-import PHP from '../images/php.png';
 
 export class Technical extends Component {
   render() {
     return (
       <div className='container' id='technical-skills'>
-        <h1>Technical Skills</h1>
+        <h1 className='margin-top-bottom'>Technical Skills</h1>
         <div className='three-column-grid'>
           <div className='technical-content' id='html'>
             <h3>HTML</h3>

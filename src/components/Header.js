@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 export class Header extends Component {
   render() {
     return (
-      <div id="header">
-        <div className="flex-container">
-          <div className="header-content">
+      <div id='header'>
+        <div className='flex-container'>
+          <div className='header-content'>
             <h1>Treezy Web Design</h1>
-            <p>Developing your ideas into reality.</p>
+            <p className='treezy-color'>Developing your ideas into reality.</p>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

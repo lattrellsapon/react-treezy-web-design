@@ -5,98 +5,40 @@ export class ContactMe extends Component {
   render() {
     return (
       <div id='contact-me'>
-        <h1>Contact Me</h1>
+        <h1>Get in touch</h1>
 
-        <ul>
-          <li>
-            <i class='fas fa-phone-volume' />{': '}
-            <a href='tel:0211775895' id='link'>
-              0211775895
-            </a>
-          </li>
-          <li>
-            <i class='fas fa-envelope' />{': '}
-            <a href='mailto:lattrellsapon@gmail.com' id='link'>
-              lattrellsapon@gmail.com
-            </a>
-          </li>
-          <li>
-            <i class='fab fa-github' />{': '}
-            <a
-              href='https://github.com/lattrellsapon'
-              target='_blank'
-              id='link'
-              rel='noopener noreferrer'
-            >
-              lattrellsapon
-            </a>
-          </li>
-          <li>
-            <i class='fab fa-linkedin-in' />{': '}
-            <a
-              href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
-              target='_blank'
-              id='link'
-              rel='noopener noreferrer'
-            >
-              Lattrell Sapon
-            </a>
-          </li>
-          <li>
-            <i class='fab fa-instagram' />{': '}
-            <a
-              href='https://www.instagram.com/lattrellwebdesign/'
-              target='_blank'
-              id='link'
-              rel='noopener noreferrer'
-            >
-              @lattrellwebdesign
-            </a>
-          </li>
-        </ul>
-
-        {/* <p>
-          <i class='fas fa-phone' />{' '}
-          <a href='tel:0211775895' id='link'>
-            0211775895
-          </a>{' '}
-          <i class='fas fa-envelope' />
-          <a href='mailto:lattrellsapon@gmail.com' id='link'>
-            lattrellsapon@gmail.com
+        <div className='flex-container-row margin-top-bottom'>
+          <a href='tel:0211775895' id='contact-details'>
+            <i class='fas fa-phone-volume' />
           </a>
-          .
-        </p> */}
-        {/* <br />
-        <p>
-          You can also view my{' '}
+          <a href='mailto:lattrellsapon@gmail.com' id='contact-details'>
+            <i class='fas fa-envelope' />
+          </a>
           <a
             href='https://github.com/lattrellsapon'
             target='_blank'
-            id='link'
             rel='noopener noreferrer'
+            id='contact-details'
           >
-            Github Account
-          </a>{' '}
-          and{' '}
+            <i class='fab fa-github' />
+          </a>
           <a
             href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
             target='_blank'
-            id='link'
             rel='noopener noreferrer'
+            id='contact-details'
           >
-            Linked In Account
+            <i class='fab fa-linkedin-in' />
           </a>
-          . Furthermore, you can view my{' '}
           <a
-            href={Transcript}
+            href='https://www.instagram.com/lattrellwebdesign/'
             target='_blank'
-            id='link'
             rel='noopener noreferrer'
+            id='contact-details'
           >
-            University Transcript
+            <i class='fab fa-instagram' />
           </a>
-          .
-        </p> */}
+        </div>
       </div>
     );
   }

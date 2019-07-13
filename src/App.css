@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', 'sans-serif';
   line-height: 1.5;
   text-align: center;
+  color: #222222;
 }
 
 img {
@@ -17,31 +20,46 @@ ul {
   list-style: none;
 }
 
-#header {
-  background: url('../src//images/programming-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  height: 300px;
-  position: relative;
-}
-
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.header-content {
-  color: #fff;
-  font-weight: bolder;
-  background: #009900;
-  margin-top: 25px;
-  width: 50%;
-  padding: 10px;
+.flex-container-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+#contact-details {
+  color: #009900;
+  font-size: 22px;
+  padding: 2px 6px;
   border-radius: 4px;
-  opacity: 0.9;
+  transition: 0.2s ease-in;
+}
+
+.treezy-color {
+  color: #009900;
+}
+
+#contact-details:hover {
+  background: #000;
+  color: #fff;
+}
+
+.margin-top-bottom {
+  margin: 10px auto;
+}
+
+.margin-top-bottom-2 {
+  margin: 20px auto;
+}
+
+.header-content {
+  font-weight: bolder;
+  margin-top: 25px;
 }
 
 .container {
@@ -59,16 +77,7 @@ ul {
   border-radius: 50%;
 }
 
-#about-me,
-#contact-me {
-  padding: 10px;
-  background: #e6e6e6;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
 .services-content {
-  background: #e6e6e6;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -92,6 +101,7 @@ ul {
 
 #skill-logo {
   font-size: 50px;
+  color: #009900;
 }
 
 .technical-content {
@@ -142,7 +152,45 @@ ul {
   color: #009900;
 }
 
+#show-and-hide-buttons {
+  background: #222222;
+  color: #fff;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 16px;
+  padding: 15px 8px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
 
+#show-and-hide-buttons:hover {
+  background: #009900;
+  color: #222222;
+}
+
+#about-me {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.view-project-button {
+  text-decoration: underline;
+  /* font-weight: bold; */
+  font-size: 20px;
+  color: #222222;
+  padding: 12px 8px;
+  border-radius: 4px;
+  transition: 0.2s ease-in;
+}
+
+.view-project-button:hover {
+  background: #009900;
+  color: #fff;
+}
 
 /* Media Queries */
 @media only screen and (min-width: 600px) {
@@ -158,6 +206,10 @@ ul {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+
+  .flex-container-row {
+    max-width: 20%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -166,8 +218,5 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-  }
-  .header-content {
-    width: 20%;
   }
 }
