@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import htmlPic from '../../images/html.png';
-
 export class Skills extends Component {
   render() {
     return (
@@ -20,7 +18,7 @@ export class Skills extends Component {
                 <h3>HTML</h3>
               </div>
               <div className='skills-content treezy-green'>
-                <i class='fab fa-html5' id='skill-logo' />
+                <i className='fab fa-html5' id='skill-logo' />
               </div>
             </div>
 
@@ -29,7 +27,7 @@ export class Skills extends Component {
                 <h3>CSS</h3>
               </div>
               <div className='treezy-green'>
-                <i class='fab fa-css3-alt' id='skill-logo' />
+                <i className='fab fa-css3-alt' id='skill-logo' />
               </div>
             </div>
 
@@ -38,7 +36,7 @@ export class Skills extends Component {
                 <h3>JavaScript</h3>
               </div>
               <div className='treezy-green'>
-                <i class='fab fa-js-square' id='skill-logo' />
+                <i className='fab fa-js-square' id='skill-logo' />
               </div>
             </div>
 
@@ -47,7 +45,7 @@ export class Skills extends Component {
                 <h3>NodeJs</h3>
               </div>
               <div className='treezy-green'>
-                <i class='fab fa-node' id='skill-logo' />
+                <i className='fab fa-node' id='skill-logo' />
               </div>
             </div>
 
@@ -83,7 +81,7 @@ export class Skills extends Component {
                 <h3>PHP</h3>
               </div>
               <div className='treezy-green'>
-                <i class='fab fa-php' id='skill-logo' />
+                <i className='fab fa-php' id='skill-logo' />
               </div>
             </div>
           </div>

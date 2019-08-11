@@ -9,7 +9,7 @@ export class Home extends Component {
       <div className='container mt-30'>
         <div className='home-grid'>
           <div>
-            <img src={MainDP} alt='Maid Display Picture' />
+            <img src={MainDP} alt='Lattrell Sapon' />
           </div>
           <div className='about-me-body'>
             <div className='name-header'>

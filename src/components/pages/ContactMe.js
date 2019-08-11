@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import ContactDetails from './ContactDetails';
-
 export class ContactMe extends Component {
   render() {
     return (
