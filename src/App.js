@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import MainDisplayPicture from './components/MainDisplayPicture';
-import AboutMe from './components/AboutMe';
-import ContactMe from './components/ContactMe';
-import Projects from './components/Projects';
-import Services from './components/Services';
-import Technical from './components/Technical';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Navbar from './components/layout/Navbar';
+import Branding from './components/layout/Branding';
+import Footer from './components/layout/Footer';
+
+import Home from './components/pages/Home';
+import Projects from './components/pages/Projects';
+import Services from './components/pages/Services';
+import Skills from './components/pages/Skills';
+import ContactMe from './components/pages/ContactMe';
 
 import uuid from 'uuid';
 
@@ -63,18 +66,23 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <MainDisplayPicture />
-        <AboutMe />
-        <ContactMe />
-
-        <Projects projects={this.state.projects} />
-
-        <Services />
-        <Technical />
-        <Footer />
-      </div>
+      <Router>
+        <React.Fragment>
+          <Navbar />
+          <Branding />
+          <Route exact path='/' component={Home} />
+          <Route
+            path='/projects'
+            render={props => (
+              <Projects {...props} projects={this.state.projects} />
+            )}
+          />
+          <Route exact path='/services' component={Services} />
+          <Route exact path='/skills' component={Skills} />
+          <Route exact path='/contactme' component={ContactMe} />
+          <Footer />
+        </React.Fragment>
+      </Router>
     );
   }
 }
