@@ -5,21 +5,21 @@ export class ProjectItem extends Component {
     const { projectLink, projectName, projectImage } = this.props.project;
 
     return (
-      <div className='project-item'>
-        <div className='text-center'>
-          <h3>{projectName}</h3>
+      <a
+        href={projectLink}
+        target='_blank'
+        id='project-links'
+        rel='noopener noreferrer'
+      >
+        <div className='project-item'>
+          <img src={projectImage} alt='' />
+          <div className='overlay'>
+            <div className='text'>
+              <h3>{projectName}</h3>
+            </div>
+          </div>
         </div>
-        <div className='mt-30'>
-          <a
-            href={projectLink}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='view-project-button letter-space'
-          >
-            <img src={projectImage} alt={projectName} />
-          </a>
-        </div>
-      </div>
+      </a>
     );
   }
 }
