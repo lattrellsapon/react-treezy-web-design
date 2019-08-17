@@ -68,6 +68,16 @@ export class ContactMe extends Component {
                   <i class='fab fa-instagram' />
                 </a>
               </div>
+              <div>
+                <a
+                  href='https://www.facebook.com/Treezy-Web-Design-374311436556053/?modal=admin_todo_tour'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  id='contact-details'
+                >
+                  <i class='fab fa-facebook-square' />
+                </a>
+              </div>
             </div>
           </div>
         </div>
